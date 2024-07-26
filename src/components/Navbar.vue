@@ -3,6 +3,7 @@
       <div class="container">
         <div class="navbar-brand">
           <router-link to="/" class="navbar-item">Home</router-link>
+          <router-link to="/favorites" class="navbar-item">Favorites</router-link>
         </div>
         <div class="navbar-menu">
          
