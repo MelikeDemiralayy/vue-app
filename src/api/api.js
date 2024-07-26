@@ -44,3 +44,12 @@ export const fetchCharacter = async (characterId) => {
 //     return [];
 //   }
 // };
+export const searchCharactersByName = async (name) => {
+  try {
+    const response = await axiosInstance.get(`/character/?name=${name}`);
+    return response.data.results || [];
+  } catch (error) {
+    console.error("Error searching characters:", error);
+    return [];
+  }
+};
